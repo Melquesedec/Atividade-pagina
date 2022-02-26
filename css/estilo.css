@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body {
+    background-color: #212529;
+}
+
 #cabecalho {
     background: #212529;
     display: flex;
@@ -11,9 +15,8 @@
     flex-wrap: nowrap;
     align-items: flex-end;
     width: 5%;
-    height: 100vh;
+    /* height: 94.1vh; */
 }
-
 .nav-link-meio {
     color:white;
     font-size: 20px;
@@ -82,18 +85,21 @@ a {
     margin: 0px 12px 0px 0px;
 }
 
-#PD{
+#PD {
     display: flex;
+    justify-content: space-between;
 }
 
 #geral-centro{
     display: flex;
 }
 
-#geral_meio{
+#geral_meio {
     background-color: black;
     color: white;
     width: 70%;
+    border-radius: 16px;
+    padding: 10px;
 }
 
 #centro{
@@ -113,10 +119,23 @@ a {
     margin: 0px 10px 0px 0px;
 }
 
-#bloco-laranja{
+#bloco-laranja {
     background-color: rgba(145, 95, 4, 0.39);
     border-radius: 15px;
-    width: 30%;
+    width: 31.5%;
+    margin: 0px 10px 0px 10px;
+}
+
+.progress-bar-laranja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #fdb10d;
+    transition: width .6s ease;
 }
 
 #WP {
@@ -126,4 +145,245 @@ a {
     align-content: center;
     justify-content: center;
     align-items: center;
+}
+
+.progress {
+    display: flex;
+    height: 0.3rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+    margin: 0px 20px 0px 20px;
+}
+
+#bloco-roxo{
+    background-color: rgba(93, 4, 145, 0.39);
+    border-radius: 15px;
+    width: 31.5%;
+    margin: 0px 10px 0px 10px;
+}
+
+.progress-bar-roxo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #a50dfd;
+    transition: width .6s ease;
+}
+
+#bloco-azul{
+    background-color: rgba(4, 100, 145, 0.39);
+    border-radius: 15px;
+    width: 31.5%;
+    margin: 0px 10px 0px 10px;
+}
+
+.progress-bar-azul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #08cef1;
+    transition: width .6s ease;
+}
+
+#bloco-vermelho{
+    background-color: rgba(240, 22, 6, 0.13);
+    border-radius: 15px;
+    width: 31.5%;
+    margin: 10px 10px 0px 10px;
+}
+
+.progress-bar-vermelho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #f11708;
+    transition: width .6s ease;
+}
+
+#bloco-verde{
+    background-color: rgba(25, 240, 6, 0.11);
+    border-radius: 15px;
+    width: 31.5%;
+    margin: 10px 10px 0px 10px;
+}
+
+.progress-bar-verde {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #23f108;
+    transition: width .6s ease;
+}
+
+#bloco-azulescuro{
+    background-color: rgba(29, 6, 240, 0.11);
+    border-radius: 15px;
+    width: 31.5%;
+    margin: 10px 10px 0px 10px;
+}
+
+.progress-bar-azulescuro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #081ff1;
+    transition: width .6s ease;
+}
+
+#geral-blocos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#progress{
+    margin: 0px 0px 7px 10px;
+}
+
+#porcentagem{
+    display: flex;
+    justify-content: flex-end;
+    margin: 4px 5px 0px 0px;
+}
+
+#december{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0px 10px;
+}
+
+#imagem-bloco {
+    width: 30px;
+    border-radius: 50px;
+    margin: 0px -15px 10px 10px;
+}
+
+#imagem-bloco-dois {
+    width: 30px;
+    border-radius: 50px;
+    margin: 0px 0px 10px 0px;
+}
+
+#input-bloco{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.emote-bloco{
+    background: black;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+#botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: -32px 12px 10px 0px;
+}
+
+#botao-bloco{
+    background-color: black;
+    color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+    font-size: 10px;
+    font-family: arial;
+    font-weight: 600;
+    width: 75px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#icones-december{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+#direito{
+    background-color: black;
+    margin: 0px 0px 0px 10px;
+    border-radius: 10px;
+    width: 23%;
+}
+
+#client{
+    color: white;
+    margin: 10px 0px 0px 10px;
+}
+
+#step{
+    color: white;
+}
+
+#estrela{
+    color: white;
+}
+
+#stepmais {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 86%;
+}
+
+p {
+    color: gray;
+    margin: -25px 0px 0px 55px;
+}
+
+#imagem-direito {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    margin: 1px 3px 3px 8px;
+}
+
+#comentario-um {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+}
+
+#dez {
+    color: grey;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: inherit;
+    margin: 0px 15px 0px 0px;
 }
