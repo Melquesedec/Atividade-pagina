@@ -32,6 +32,8 @@ body {
 #port{
     color: white;
     margin: 0px 30px 0px 100px;
+    display: flex;
+    align-items: center;
 }
 
 .form-control {
@@ -387,3 +389,284 @@ p {
     width: inherit;
     margin: 0px 15px 0px 0px;
 }
+
+@media (max-width: 1450px){
+    p {
+        color: gray;
+        margin: -5px 0px 0px 10px;
+    }
+    #cabecalho {
+        background: #212529;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        width: 4%;
+    }
+    #stepmais {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 90%;
+        margin: 0px 0px 0px 10px;
+    }
+    #comentario-um {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+    #geral_meio {
+        background-color: black;
+        color: white;
+        width: 60%;
+        border-radius: 16px;
+        padding: 10px;
+    }
+    #direito {
+        background-color: black;
+        margin: 0px 0px 0px 10px;
+        border-radius: 10px;
+        width: 31%;
+    }
+    #bloco-laranja {
+        width: 29.8%;
+    }
+    #bloco-azul {
+        width: 29.8%;
+    }
+    #bloco-verde {
+        width: 29.8%;
+    }
+    #bloco-vermelho {
+        width: 29.8%;
+    }
+    #bloco-roxo {
+        width: 29.8%;
+    }
+    #bloco-azulescuro {
+        width: 29.8%;
+    }
+}
+
+@media (max-width: 1024px){
+    p {
+        color: gray;
+        margin: -5px 0px 0px 10px;
+    }
+    #cabecalho {
+        background: #212529;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        width: 6%;
+        /* height: 94.1vh; */
+    }
+    #port {
+        color: white;
+        margin: 0px 30px 0px 70px;
+        display: flex;
+        align-items: center;
+    }
+    #stepmais {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 90%;
+        margin: 0px 0px 0px 10px;
+    }
+    #comentario-um {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+    #geral_meio {
+        background-color: black;
+        color: white;
+        width: 60%;
+        border-radius: 16px;
+        padding: 10px;
+    }
+    #direito {
+        background-color: black;
+        margin: 0px 0px 0px 10px;
+        border-radius: 10px;
+        width: 29%;
+    }
+    #bloco-laranja {
+        width: 29.8%;
+    }
+    #bloco-azul {
+        width: 29.8%;
+    }
+    #bloco-verde {
+        width: 29.8%;
+    }
+    #bloco-vermelho {
+        width: 29.8%;
+    }
+    #bloco-roxo {
+        width: 29.8%;
+    }
+    #bloco-azulescuro {
+        width: 29.8%;
+    }
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 800px){
+    #bloco-laranja {
+        width: 45%;
+        margin: 10px 10px 10px 10px;
+    }
+    #bloco-azul {
+        width: 45%;
+        margin: 10px 10px 10px 10px;
+    }
+    #bloco-verde {
+        width: 45%;
+        margin: 10px 10px 10px 10px;
+    }
+    #bloco-vermelho {
+        width: 45%;
+        margin: 10px 10px 10px 10px;
+    }
+    #bloco-roxo {
+        width: 45%;
+        margin: 10px 10px 10px 10px;
+    }
+    #bloco-azulescuro {
+        width: 45%;
+        margin: 10px 10px 10px 10px;
+    }
+    #cabecalho {
+        background: #212529;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        width: 8%;
+        /* height: 94.1vh; */
+    }
+    #port {
+        color: white;
+        margin: 0px 30px 0px 70px;
+        display: flex;
+        align-items: center;
+    }
+    p {
+        color: gray;
+        margin: -5px 0px 0px 5px;
+    }
+    #stepmais {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 85%;
+        margin: 0px 0px 0px 10px;
+    }
+    #direito {
+        background-color: black;
+        margin: 0px 0px 0px 10px;
+        border-radius: 10px;
+        width: 27%;
+    }   
+}
+
+@media (max-width: 425px){
+    #bloco-laranja {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    #bloco-azul {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    #bloco-verde {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    #bloco-vermelho {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    #bloco-roxo {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    #bloco-azulescuro {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    #direito {
+        background-color: black;
+        margin: 5px 0px 0px 0px;
+        border-radius: 10px;
+        width: 80%;
+    }
+    #geral-centro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #stepmais {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 90%;
+        margin: 0px 0px 0px 10px;
+    }    
+    #geral_meio {
+        background-color: black;
+        color: white;
+        width: 80%;
+        border-radius: 16px;
+        padding: 10px;
+    }
+    #cabecalho {
+        background: #212529;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 5%;
+        /* height: 94.1vh; */
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+    }
+    p {
+        color: gray;
+        margin: 0px 0px 0px 10px;
+    }
+    #port {
+        color: white;
+        margin: 0px 15px 0px 0px;
+        display: flex;
+        align-items: center;
+    }
+    #cabecalho-dois{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #centro {
+        display: flex;
+        margin: 10px 0px 10px 0px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
