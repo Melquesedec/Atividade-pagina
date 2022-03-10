@@ -8,6 +8,10 @@ body {
     background-color: #212529;
 }
 
+body.active {
+    background-color: rgb(172, 170, 170);
+}
+
 #cabecalho {
     background: #212529;
     display: flex;
@@ -18,6 +22,23 @@ body {
     /* height: 94.1vh; */
     align-content: center;
 }
+
+#cabecalho.active {
+    background: rgb(172, 170, 170);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 5%;
+    /* height: 94.1vh; */
+    align-content: center;
+}
+
+.bg-dark.active {
+    --bs-bg-opacity: 1;
+    background-color: rgb(172, 170, 170) !important;
+}
+
 .nav-link-meio {
     color:white;
     font-size: 20px;
@@ -32,6 +53,13 @@ body {
 
 #port{
     color: white;
+    margin: 0px 30px 0px 100px;
+    display: flex;
+    align-items: center;
+}
+
+#port.active{
+    color: black;
     margin: 0px 30px 0px 100px;
     display: flex;
     align-items: center;
@@ -56,19 +84,22 @@ body {
 }
 
 .nav-link-esquerda{
-    color: white !important;
     font-size: 20px;
     margin: 0px 5px 0px 0px;
-    transition: 0.7s all;
+    cursor: pointer;
 }
 
-.nav-link-esquerda:hover{
-    color: black !important;
-    transition: 0.7s all;
+.nav-link-esquerda.active{
+    font-size: 20px;
+    margin: 0px 5px 0px 0px;
+    cursor: pointer;
 }
 
 .nav-link-meio-meio {
     color: white !important;
+    background-color: #000000;
+    border: #000000 solid 5px;
+    border-radius: 50px;
     font-size: 10px;
     margin: 0px 10px 0px 0px;
     transition: 0.7s all;
@@ -81,6 +112,13 @@ body {
 
 .nav-link-direita {
     color: white !important;
+    font-size: 20px;
+    margin: 0px 15px 0px 0px;
+    transition: 0.7s all;
+}
+
+.nav-link-direita.active {
+    color: rgb(0, 0, 0) !important;
     font-size: 20px;
     margin: 0px 15px 0px 0px;
     transition: 0.7s all;
@@ -106,12 +144,21 @@ a {
     /* margin: 0px 12px 0px 0px; */
 }
 
+#name-a.active{
+    color: black;
+}
+
 a:hover {
     color: white;
 }
 
 #emote-cabecalho{
     color: white;
+    transition: 0.7s all;
+}
+
+#emote-cabecalho.active {
+    color: black;
     transition: 0.7s all;
 }
 
@@ -136,6 +183,14 @@ a:hover {
 #geral_meio {
     background-color: black;
     color: white;
+    width: 70%;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+#geral_meio.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     width: 70%;
     border-radius: 16px;
     padding: 10px;
@@ -382,12 +437,25 @@ a:hover {
     margin: 10px 0px 0px 10px;
 }
 
+#client.active{
+    color: rgb(0, 0, 0);
+    margin: 10px 0px 0px 10px;
+}
+
 #step{
     color: white;
 }
 
+#step.active{
+    color: rgb(0, 0, 0);
+}
+
 #estrela{
     color: white;
+}
+
+#estrela.active{
+    color: rgb(0, 0, 0);
 }
 
 #stepmais {
@@ -415,6 +483,10 @@ p {
     flex-wrap: wrap;
     width: 100%;
     margin: 20px 0px 0px 0px;
+}
+
+#comentario-um:hover {
+    background-color:#373a3d;
 }
 
 #dez {

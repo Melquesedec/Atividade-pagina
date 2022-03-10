@@ -5,18 +5,25 @@
 }
 
 body {
-    background-color: #212529;
+    background-color: rgb(172, 170, 170);
 }
 
 #cabecalho {
-    background: #212529;
+    background: rgb(172, 170, 170);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: flex-end;
+    align-items: center;
     width: 5%;
     /* height: 94.1vh; */
+    align-content: center;
 }
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgb(172, 170, 170) !important;
+}
+
 .nav-link-meio {
     color:white;
     font-size: 20px;
@@ -30,7 +37,7 @@ body {
 }
 
 #port{
-    color: white;
+    color: black;
     margin: 0px 30px 0px 100px;
     display: flex;
     align-items: center;
@@ -55,21 +62,36 @@ body {
 }
 
 .nav-link-esquerda{
-    color: white !important;
     font-size: 20px;
     margin: 0px 5px 0px 0px;
+    cursor: pointer;
 }
 
 .nav-link-meio-meio {
     color: white !important;
+    background-color: #000000;
+    border: #000000 solid 5px;
+    border-radius: 50px;
     font-size: 10px;
     margin: 0px 10px 0px 0px;
+    transition: 0.7s all;
+}
+
+.nav-link-meio-meio:hover{
+    color: rgb(39, 39, 248) !important;
+    transition: 0.7s all;
 }
 
 .nav-link-direita {
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
     font-size: 20px;
     margin: 0px 15px 0px 0px;
+    transition: 0.7s all;
+}
+
+.nav-link-direita:hover{
+    color: rgb(39, 39, 248) !important;
+    transition: 0.7s all;
 }
 
 #imagem-portfolio{
@@ -79,12 +101,30 @@ body {
 }
 
 a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: inherit;
     font-size: 15px;
     font-family: arial;
     font-weight: 600;
     /* margin: 0px 12px 0px 0px; */
+}
+
+#name-a{
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+#emote-cabecalho {
+    color: black;
+    transition: 0.7s all;
+}
+
+#emote-cabecalho:hover{
+    color: rgb(67, 67, 233);
+    transition: 0.7s all;
 }
 
 #perfil{
@@ -101,8 +141,8 @@ a {
 }
 
 #geral_meio {
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     width: 70%;
     border-radius: 16px;
     padding: 10px;
@@ -126,14 +166,10 @@ a {
 }
 
 #bloco-laranja {
-    background-color: rgba(6, 4, 145, 0.39);
+    background-color: rgba(145, 95, 4, 0.39);
     border-radius: 15px;
-    width: 100%;
-    height: 13vh;
+    width: 31.5%;
     margin: 0px 10px 0px 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .progress-bar-laranja {
@@ -144,16 +180,17 @@ a {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: #1d0dfd;
+    background-color: #fdb10d;
     transition: width .6s ease;
 }
 
 #WP {
     display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
     flex-direction: column;
-    margin: 0px 0px 0px 13px;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .progress {
@@ -163,11 +200,102 @@ a {
     font-size: .75rem;
     background-color: #e9ecef;
     border-radius: 0.25rem;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 20px 0px 20px;
 }
 
-#geral_progress{
-    width: 100%;
+#bloco-roxo{
+    background-color: rgba(93, 4, 145, 0.39);
+    border-radius: 15px;
+    width: 31.5%;
+    margin: 0px 10px 0px 10px;
+}
+
+.progress-bar-roxo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #a50dfd;
+    transition: width .6s ease;
+}
+
+#bloco-azul{
+    background-color: rgba(4, 100, 145, 0.39);
+    border-radius: 15px;
+    width: 31.5%;
+    margin: 0px 10px 0px 10px;
+}
+
+.progress-bar-azul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #08cef1;
+    transition: width .6s ease;
+}
+
+#bloco-vermelho{
+    background-color: rgba(240, 22, 6, 0.13);
+    border-radius: 15px;
+    width: 31.5%;
+    margin: 10px 10px 0px 10px;
+}
+
+.progress-bar-vermelho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #f11708;
+    transition: width .6s ease;
+}
+
+#bloco-verde{
+    background-color: rgba(25, 240, 6, 0.11);
+    border-radius: 15px;
+    width: 31.5%;
+    margin: 10px 10px 0px 10px;
+}
+
+.progress-bar-verde {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #23f108;
+    transition: width .6s ease;
+}
+
+#bloco-azulescuro{
+    background-color: rgba(29, 6, 240, 0.11);
+    border-radius: 15px;
+    width: 31.5%;
+    margin: 10px 10px 0px 10px;
+}
+
+.progress-bar-azulescuro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #081ff1;
+    transition: width .6s ease;
 }
 
 #geral-blocos {
@@ -180,15 +308,15 @@ a {
     margin: 0px 0px 7px 10px;
 }
 
-#porcentagem {
+#porcentagem{
     display: flex;
     justify-content: flex-end;
-    margin: 5px 5px 5px 0px;
+    margin: 4px 5px 0px 0px;
 }
 
-#december {
+#december{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin: 10px 10px 0px 10px;
 }
 
@@ -224,7 +352,9 @@ a {
 
 #botao {
     display: flex;
-    margin: 0px 8px 0px 0px;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: -32px 12px 10px 0px;
 }
 
 #botao-bloco{
@@ -248,23 +378,23 @@ a {
 }
 
 #direito{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin: 0px 0px 0px 10px;
     border-radius: 10px;
     width: 23%;
 }
 
 #client{
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 10px 0px 0px 10px;
 }
 
 #step{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #estrela{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #stepmais {
@@ -295,7 +425,7 @@ p {
 }
 
 #comentario-um:hover {
-    background-color: #4f5052;
+    background-color:#373a3d;
 }
 
 #dez {
@@ -314,7 +444,6 @@ p {
         margin: -5px 0px 0px 10px;
     }
     #cabecalho {
-        background: #212529;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -336,27 +465,40 @@ p {
         margin: 0px 0px 0px 0px;
     }
     #geral_meio {
-        background-color: black;
-        color: white;
         width: 60%;
         border-radius: 16px;
         padding: 10px;
     }
     #direito {
-        background-color: black;
         margin: 0px 0px 0px 10px;
         border-radius: 10px;
         width: 31%;
+    }
+    #bloco-laranja {
+        width: 29.8%;
+    }
+    #bloco-azul {
+        width: 29.8%;
+    }
+    #bloco-verde {
+        width: 29.8%;
+    }
+    #bloco-vermelho {
+        width: 29.8%;
+    }
+    #bloco-roxo {
+        width: 29.8%;
+    }
+    #bloco-azulescuro {
+        width: 29.8%;
     }
 }
 
 @media (max-width: 1024px){
     p {
-        color: gray;
         margin: -5px 0px 0px 10px;
     }
     #cabecalho {
-        background: #212529;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -365,7 +507,6 @@ p {
         /* height: 94.1vh; */
     }
     #port {
-        color: white;
         margin: 0px 30px 0px 70px;
         display: flex;
         align-items: center;
@@ -385,17 +526,32 @@ p {
         margin: 0px 0px 0px 0px;
     }
     #geral_meio {
-        background-color: black;
-        color: white;
         width: 60%;
         border-radius: 16px;
         padding: 10px;
     }
     #direito {
-        background-color: black;
         margin: 0px 0px 0px 10px;
         border-radius: 10px;
         width: 29%;
+    }
+    #bloco-laranja {
+        width: 29.8%;
+    }
+    #bloco-azul {
+        width: 29.8%;
+    }
+    #bloco-verde {
+        width: 29.8%;
+    }
+    #bloco-vermelho {
+        width: 29.8%;
+    }
+    #bloco-roxo {
+        width: 29.8%;
+    }
+    #bloco-azulescuro {
+        width: 29.8%;
     }
     .navbar {
         position: relative;
@@ -409,8 +565,31 @@ p {
 }
 
 @media (max-width: 800px){
+    #bloco-laranja {
+        width: 45%;
+        margin: 10px 10px 10px 10px;
+    }
+    #bloco-azul {
+        width: 45%;
+        margin: 10px 10px 10px 10px;
+    }
+    #bloco-verde {
+        width: 45%;
+        margin: 10px 10px 10px 10px;
+    }
+    #bloco-vermelho {
+        width: 45%;
+        margin: 10px 10px 10px 10px;
+    }
+    #bloco-roxo {
+        width: 45%;
+        margin: 10px 10px 10px 10px;
+    }
+    #bloco-azulescuro {
+        width: 45%;
+        margin: 10px 10px 10px 10px;
+    }
     #cabecalho {
-        background: #212529;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -419,13 +598,11 @@ p {
         /* height: 94.1vh; */
     }
     #port {
-        color: white;
         margin: 0px 30px 0px 70px;
         display: flex;
         align-items: center;
     }
     p {
-        color: gray;
         margin: -5px 0px 0px 5px;
     }
     #stepmais {
@@ -436,7 +613,6 @@ p {
         margin: 0px 0px 0px 10px;
     }
     #direito {
-        background-color: black;
         margin: 0px 0px 0px 10px;
         border-radius: 10px;
         width: 27%;
@@ -444,8 +620,31 @@ p {
 }
 
 @media (max-width: 425px){
+    #bloco-laranja {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    #bloco-azul {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    #bloco-verde {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    #bloco-vermelho {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    #bloco-roxo {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    #bloco-azulescuro {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
     #direito {
-        background-color: black;
         margin: 5px 0px 0px 0px;
         border-radius: 10px;
         width: 80%;
@@ -463,14 +662,11 @@ p {
         margin: 0px 0px 0px 10px;
     }    
     #geral_meio {
-        background-color: black;
-        color: white;
         width: 80%;
         border-radius: 16px;
         padding: 10px;
     }
     #cabecalho {
-        background: #212529;
         display: flex;
         flex-wrap: nowrap;
         width: 5%;
@@ -480,11 +676,9 @@ p {
         justify-content: center;
     }
     p {
-        color: gray;
         margin: 0px 0px 0px 10px;
     }
     #port {
-        color: white;
         margin: 0px 15px 0px 0px;
         display: flex;
         align-items: center;

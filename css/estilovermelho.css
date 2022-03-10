@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -103,7 +104,6 @@ a {
     background-color: black;
     color: white;
     width: 70%;
-    height: 30vh;
     border-radius: 16px;
     padding: 10px;
 }
@@ -125,21 +125,35 @@ a {
     margin: 0px 10px 0px 0px;
 }
 
-#bloco-vermelho {
-    background-color: rgba(240, 22, 6, 0.13);
+#bloco-laranja {
+    background-color: rgba(145, 4, 4, 0.39);
     border-radius: 15px;
     width: 100%;
-    height: 28vh;
+    height: 13vh;
     margin: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.progress-bar-laranja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #fd0d0d;
+    transition: width .6s ease;
 }
 
 #WP {
     display: flex;
-    flex-direction: column;
     flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0px 0px 0px 13px;
 }
 
 .progress {
@@ -149,19 +163,11 @@ a {
     font-size: .75rem;
     background-color: #e9ecef;
     border-radius: 0.25rem;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 0px 0px 0px;
 }
 
-.progress-bar-vermelho {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    background-color: #f11708;
-    transition: width .6s ease;
+#geral_progress{
+    width: 100%;
 }
 
 #geral-blocos {
@@ -177,12 +183,12 @@ a {
 #porcentagem {
     display: flex;
     justify-content: flex-end;
-    margin: 4px 5px 34px 0px;
+    margin: 5px 5px 5px 0px;
 }
 
-#december{
+#december {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 10px 10px 0px 10px;
 }
 
@@ -218,9 +224,7 @@ a {
 
 #botao {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: -32px 12px 10px 0px;
+    margin: 0px 8px 0px 0px;
 }
 
 #botao-bloco{
@@ -288,6 +292,10 @@ p {
     flex-wrap: wrap;
     width: 100%;
     margin: 20px 0px 0px 0px;
+}
+
+#comentario-um:hover {
+    background-color: #4f5052;
 }
 
 #dez {
