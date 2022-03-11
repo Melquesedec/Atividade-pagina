@@ -6,10 +6,12 @@
 
 body {
     background-color: #212529;
+    color: white;
 }
 
-body.active {
+.active{
     background-color: rgb(172, 170, 170);
+    color: black;
 }
 
 #cabecalho {
@@ -25,17 +27,10 @@ body.active {
 
 #cabecalho.active {
     background: rgb(172, 170, 170);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    width: 5%;
-    /* height: 94.1vh; */
-    align-content: center;
+    color: black;
 }
 
 .bg-dark.active {
-    --bs-bg-opacity: 1;
     background-color: rgb(172, 170, 170) !important;
 }
 
@@ -45,8 +40,32 @@ body.active {
     margin: 10px 20px 10px 0px;
 }
 
+.nav-link-meio-dois {
+    color:white;
+    font-size: 20px;
+    margin: 10px 20px 10px 0px;
+}
+
+.nav-link-meio-tres {
+    color:white;
+    font-size: 20px;
+    margin: 10px 20px 10px 0px;
+}
+
+.nav-link-meio.active {
+    color:black;
+    font-size: 20px;
+    margin: 10px 20px 10px 0px;
+}
+
 .nav-link-primeiro {
     color:white;
+    font-size: 20px;
+    margin: 80px 20px 10px 0px;
+}
+
+.nav-link-primeiro.active {
+    color:black;
     font-size: 20px;
     margin: 80px 20px 10px 0px;
 }
@@ -90,9 +109,8 @@ body.active {
 }
 
 .nav-link-esquerda.active{
-    font-size: 20px;
-    margin: 0px 5px 0px 0px;
     cursor: pointer;
+    color: black;
 }
 
 .nav-link-meio-meio {
@@ -133,6 +151,26 @@ body.active {
     border-radius: 50px;
     width: 40px;
     height: 40px;
+}
+
+.fa-align-right{
+    color: white;
+    cursor: pointer;
+}
+
+.fa-th-large{
+    color: white;
+    cursor: pointer;
+}
+
+.fa-align-right.active{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.fa-th-large.active{
+    color: black;
+    cursor: pointer;
 }
 
 a {
@@ -432,6 +470,11 @@ a:hover {
     width: 23%;
 }
 
+#direito.active{
+    background-color: white;
+    color: #000000;
+}
+
 #client{
     color: white;
     margin: 10px 0px 0px 10px;
@@ -439,15 +482,16 @@ a:hover {
 
 #client.active{
     color: rgb(0, 0, 0);
-    margin: 10px 0px 0px 10px;
+    background-color: white;
 }
 
 #step{
-    color: white;
+    color: grey;
 }
 
 #step.active{
     color: rgb(0, 0, 0);
+    background-color: white;
 }
 
 #estrela{
@@ -456,6 +500,7 @@ a:hover {
 
 #estrela.active{
     color: rgb(0, 0, 0);
+    background-color: white;
 }
 
 #stepmais {
@@ -468,6 +513,11 @@ a:hover {
 p {
     color: gray;
     margin: -25px 0px 0px 55px;
+}
+
+p.active {
+    color: rgb(0, 0, 0);
+    background-color: white;
 }
 
 #imagem-direito {
@@ -485,8 +535,12 @@ p {
     margin: 20px 0px 0px 0px;
 }
 
+#comentario-um.active {
+    background-color: white;
+}
+
 #comentario-um:hover {
-    background-color:#373a3d;
+    background-color:#ffffff;
 }
 
 #dez {
