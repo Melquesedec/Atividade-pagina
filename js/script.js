@@ -72,13 +72,46 @@ selecionar_lista.addEventListener("click", function(){
     }
 })
 
-let notificacao = document.querySelectorAll('.notificacao')
-let aparecer_notificacao = document.querySelector('.fa-bell')
+// let notificacao = document.querySelector('.notificacao')
+// let aparecer_notificacao = document.querySelector('.fa-bell')
 
-aparecer_notificacao.addEventListener("click", function(){
-    let notif = document.querySelectorAll('.notificacao')
-    for(i=0; i < notif.length; i++){
-        notif[i].classList.remove("notificacao")        
-        notif[i].classList.add("notificacao") 
-    } 
-})
+// aparecer_notificacao.addEventListener("click", function(){
+//     notificacao.style.display = "block"        
+// })
+
+let mensagem = document.querySelector(".mensagem") 
+
+// mostra a mensagem
+function showMessage(){   
+   mensagem.style.display = "block";   
+ }
+// esconde a mensagem
+function hideMessage(){
+  mensagem.style.display = "none"; 
+}
+
+let mais = document.querySelector(".me-2")
+let maisdois = document.querySelector(".btn-outline-success") 
+
+// mostra a mensagem
+function mostrarpesquisa(){   
+   mais.style.display = "block";   
+   maisdois.style.display = "block"; 
+ }
+// esconde a mensagem
+function sairpesquisa(){
+   mais.style.display = "none"; 
+   maisdois.style.display = "none";
+}
+
+let perfiln = document.querySelector(".perfil") 
+
+// mostra a mensagem
+function mostrarperfil(){   
+    perfiln.style.display = "block";
+  }
+ // esconde a mensagem
+ function sairperfil(){
+    perfiln.style.display = "none";
+ }
+

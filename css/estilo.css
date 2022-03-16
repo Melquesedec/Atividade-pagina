@@ -595,7 +595,7 @@ p.active {
     align-items: center;
 }
 
-.notificacao{
+.mensagem{
     background-color: white;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -604,6 +604,17 @@ p.active {
     height: 60px;
     border-radius: 10px;
     position: absolute;
+    display: none;
+}
+
+.botao{
+    background: none;
+    border: solid 0px;
+}
+
+.plus{
+    background: none;
+    border: solid 0px;
 }
 
 .fa-bell{
@@ -623,6 +634,43 @@ p.active {
     position: absolute;
     top: -9px;
     left: 12px;
+}
+
+.justify-content-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil {
+    background-color: white;
+    color: black;
+    width: 6.9%;
+    left: 1775px;
+    height: 115px;
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+}
+
+.mensagemperfil {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 14px 5px 0px 0px;
+    justify-content: center;
+}
+
+#triangulodois {
+    color: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -9px;
+    left: 30px;
 }
 
 @media (max-width: 1930px){
