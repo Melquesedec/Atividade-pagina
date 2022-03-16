@@ -182,6 +182,10 @@ a {
     /* margin: 0px 12px 0px 0px; */
 }
 
+a.active {
+    color: black !important;
+}
+
 #name-a.active{
     color: black;
 }
@@ -221,7 +225,7 @@ a:hover {
 #geral_meio {
     background-color: black;
     color: white;
-    width: 70%;
+    width: 60%;
     border-radius: 16px;
     padding: 10px;
 }
@@ -229,7 +233,7 @@ a:hover {
 #geral_meio.active {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    width: 70%;
+    width: 60%;
     border-radius: 16px;
     padding: 10px;
 }
@@ -251,11 +255,15 @@ a:hover {
     margin: 0px 10px 0px 0px;
 }
 
-#bloco-laranja {
-    background-color: rgba(145, 95, 4, 0.39);
+.blocos{
     border-radius: 15px;
     width: 31.5%;
     margin: 0px 10px 0px 10px;
+}
+
+
+.bloco-laranja {
+    background-color: rgba(145, 95, 4, 0.39);
 }
 
 .progress-bar-laranja {
@@ -279,6 +287,16 @@ a:hover {
     align-items: center;
 }
 
+#WP.active {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .progress {
     display: flex;
     height: 0.3rem;
@@ -289,11 +307,8 @@ a:hover {
     margin: 0px 20px 0px 20px;
 }
 
-#bloco-roxo{
+.bloco-roxo{
     background-color: rgba(93, 4, 145, 0.39);
-    border-radius: 15px;
-    width: 31.5%;
-    margin: 0px 10px 0px 10px;
 }
 
 .progress-bar-roxo {
@@ -308,7 +323,7 @@ a:hover {
     transition: width .6s ease;
 }
 
-#bloco-azul{
+.bloco-azul{
     background-color: rgba(4, 100, 145, 0.39);
     border-radius: 15px;
     width: 31.5%;
@@ -327,11 +342,8 @@ a:hover {
     transition: width .6s ease;
 }
 
-#bloco-vermelho{
+.bloco-vermelho{
     background-color: rgba(240, 22, 6, 0.13);
-    border-radius: 15px;
-    width: 31.5%;
-    margin: 10px 10px 0px 10px;
 }
 
 .progress-bar-vermelho {
@@ -346,11 +358,8 @@ a:hover {
     transition: width .6s ease;
 }
 
-#bloco-verde{
+.bloco-verde{
     background-color: rgba(25, 240, 6, 0.11);
-    border-radius: 15px;
-    width: 31.5%;
-    margin: 10px 10px 0px 10px;
 }
 
 .progress-bar-verde {
@@ -365,11 +374,8 @@ a:hover {
     transition: width .6s ease;
 }
 
-#bloco-azulescuro{
+.bloco-azulescuro{
     background-color: rgba(29, 6, 240, 0.11);
-    border-radius: 15px;
-    width: 31.5%;
-    margin: 10px 10px 0px 10px;
 }
 
 .progress-bar-azulescuro {
@@ -394,13 +400,36 @@ a:hover {
     margin: 0px 0px 7px 10px;
 }
 
+.geral-progresso{
+    width: 100%;
+}
+
+#progress.active{
+    color: black;
+    margin: 0px 0px 7px 10px;
+}
+
 #porcentagem{
     display: flex;
     justify-content: flex-end;
     margin: 4px 5px 0px 0px;
 }
 
+#porcentagem.active{
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    margin: 4px 5px 0px 0px;
+}
+
 #december{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0px 10px;
+}
+
+#december.active{
+    color: black;
     display: flex;
     justify-content: space-between;
     margin: 10px 10px 0px 10px;
@@ -467,12 +496,15 @@ a:hover {
     background-color: black;
     margin: 0px 0px 0px 10px;
     border-radius: 10px;
-    width: 23%;
+    width: 27%;
 }
 
 #direito.active{
     background-color: white;
     color: #000000;
+    margin: 0px 0px 0px 10px;
+    border-radius: 10px;
+    width: 30%;
 }
 
 #client{
@@ -553,6 +585,92 @@ p.active {
     margin: 0px 15px 0px 0px;
 }
 
+.blocosdois{
+    border-radius: 15px;
+    width: 100%;
+    height: 16vh;
+    margin: 5px 0px 5px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.notificacao{
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 8%;
+    left: 1750px;
+    height: 60px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.fa-bell{
+    cursor: pointer;
+}
+
+.notificacoes{
+    font-size: 16px;
+    margin: 5px 5px;
+    font-weight: 700;
+}
+
+#triangulo {
+    color: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -9px;
+    left: 12px;
+}
+
+@media (max-width: 1930px){
+    p {
+        color: gray;
+        margin: -5px 0px 0px 10px;
+    }
+    #cabecalho {
+        background: #212529;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        width: 4%;
+    }
+    #stepmais {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 90%;
+        margin: 0px 0px 0px 10px;
+    }
+    #comentario-um {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+    #geral_meio {
+        background-color: black;
+        color: white;
+        width: 60%;
+        border-radius: 16px;
+        padding: 10px;
+    }
+    #direito {
+        background-color: black;
+        margin: 0px 0px 0px 10px;
+        border-radius: 10px;
+        width: 31%;
+    }
+    .blocos {
+        width: 29.8%;
+        margin: 10px 10px;
+    }
+}
+
 @media (max-width: 1450px){
     p {
         color: gray;
@@ -593,22 +711,7 @@ p.active {
         border-radius: 10px;
         width: 31%;
     }
-    #bloco-laranja {
-        width: 29.8%;
-    }
-    #bloco-azul {
-        width: 29.8%;
-    }
-    #bloco-verde {
-        width: 29.8%;
-    }
-    #bloco-vermelho {
-        width: 29.8%;
-    }
-    #bloco-roxo {
-        width: 29.8%;
-    }
-    #bloco-azulescuro {
+    .blocos {
         width: 29.8%;
     }
 }
@@ -660,22 +763,7 @@ p.active {
         border-radius: 10px;
         width: 29%;
     }
-    #bloco-laranja {
-        width: 29.8%;
-    }
-    #bloco-azul {
-        width: 29.8%;
-    }
-    #bloco-verde {
-        width: 29.8%;
-    }
-    #bloco-vermelho {
-        width: 29.8%;
-    }
-    #bloco-roxo {
-        width: 29.8%;
-    }
-    #bloco-azulescuro {
+    .blocos {
         width: 29.8%;
     }
     .navbar {
@@ -690,27 +778,7 @@ p.active {
 }
 
 @media (max-width: 800px){
-    #bloco-laranja {
-        width: 45%;
-        margin: 10px 10px 10px 10px;
-    }
-    #bloco-azul {
-        width: 45%;
-        margin: 10px 10px 10px 10px;
-    }
-    #bloco-verde {
-        width: 45%;
-        margin: 10px 10px 10px 10px;
-    }
-    #bloco-vermelho {
-        width: 45%;
-        margin: 10px 10px 10px 10px;
-    }
-    #bloco-roxo {
-        width: 45%;
-        margin: 10px 10px 10px 10px;
-    }
-    #bloco-azulescuro {
+    .blocos {
         width: 45%;
         margin: 10px 10px 10px 10px;
     }
@@ -749,27 +817,7 @@ p.active {
 }
 
 @media (max-width: 425px){
-    #bloco-laranja {
-        width: 100%;
-        margin: 10px 0px 10px 0px;
-    }
-    #bloco-azul {
-        width: 100%;
-        margin: 10px 0px 10px 0px;
-    }
-    #bloco-verde {
-        width: 100%;
-        margin: 10px 0px 10px 0px;
-    }
-    #bloco-vermelho {
-        width: 100%;
-        margin: 10px 0px 10px 0px;
-    }
-    #bloco-roxo {
-        width: 100%;
-        margin: 10px 0px 10px 0px;
-    }
-    #bloco-azulescuro {
+    .blocos {
         width: 100%;
         margin: 10px 0px 10px 0px;
     }

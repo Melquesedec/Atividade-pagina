@@ -38,6 +38,12 @@ modeSwitch.addEventListener('click', function(){
     document.querySelector(".estrelatres").classList.toggle('active')
     document.querySelector(".fa-align-right").classList.toggle('active')
     document.querySelector(".fa-th-large").classList.toggle('active')
+    document.querySelector("#progress").classList.toggle('active')
+    document.querySelector("#december").classList.toggle('active')
+    document.querySelector("#porcentagem").classList.toggle('active')
+    document.querySelector("a").classList.toggle('active')
+    document.querySelector("a").classList.toggle('active')
+    document.querySelector("a").classList.toggle('active')
     });
     ativo = 1
 } else {
@@ -47,17 +53,32 @@ modeSwitch.addEventListener('click', function(){
     ativo = 0
 }
 
-var ativo = 0
-var modeSwitch = document.querySelector('.fa-th-large')
-if(ativo == 0){
-modeSwitch.addEventListener('click', function(){
-    document.documentElement.classList.toggle('dark')
-    });
-    ativo = 1
-} else {
-    modeSwitch.addEventListener('click', function(){
-        modeSwitch.classList.remove('active')
-    })
-    ativo = 0
-}
+let teste = document.querySelectorAll('.blocos')
+let selecionar_quadrado = document.querySelector('.fa-align-right')
+let selecionar_lista = document.querySelector('.fa-th-large')
 
+selecionar_quadrado.addEventListener("click", function(){   
+    for(i=0; i < teste.length; i++){ 
+        teste[i].classList.remove("blocos")        
+        teste[i].classList.add("blocosdois")   
+    }
+})
+
+selecionar_lista.addEventListener("click", function(){  
+    let testedois = document.querySelectorAll('.blocosdois') 
+    for(i=0; i < testedois.length; i++){ 
+        testedois[i].classList.remove("blocosdois")
+        testedois[i].classList.add("blocos")          
+    }
+})
+
+let notificacao = document.querySelectorAll('.notificacao')
+let aparecer_notificacao = document.querySelector('.fa-bell')
+
+aparecer_notificacao.addEventListener("click", function(){
+    let notif = document.querySelectorAll('.notificacao')
+    for(i=0; i < notif.length; i++){
+        notif[i].classList.remove("notificacao")        
+        notif[i].classList.add("notificacao") 
+    } 
+})
