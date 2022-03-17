@@ -595,7 +595,7 @@ p.active {
     align-items: center;
 }
 
-.mensagem{
+.notificacao{
     background-color: white;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -778,6 +778,19 @@ p.active {
         width: 6%;
         /* height: 94.1vh; */
     }
+
+    .notificacao {
+        background-color: white;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 17%;
+        left: 573px;
+        height: 60px;
+        border-radius: 10px;
+        position: absolute;
+        display: none;
+    }
+
     #port {
         color: white;
         margin: 0px 30px 0px 70px;
@@ -791,6 +804,7 @@ p.active {
         width: 90%;
         margin: 0px 0px 0px 10px;
     }
+    
     #comentario-um {
         display: flex;
         flex-direction: row;
@@ -849,6 +863,19 @@ p.active {
         color: gray;
         margin: -5px 0px 0px 5px;
     }
+
+    .notificacao {
+        background-color: white;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 17%;
+        left: 573px;
+        height: 60px;
+        border-radius: 10px;
+        position: absolute;
+        display: none;
+    }
+
     #stepmais {
         display: flex;
         justify-content: space-between;
@@ -903,6 +930,36 @@ p.active {
         flex-direction: row;
         align-items: baseline;
         justify-content: center;
+    }
+    .notificacao {
+        background-color: white;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 39%;
+        left: 99px;
+        height: 60px;
+        border-radius: 10px;
+        position: absolute;
+        display: none;
+    }
+    .mensagemperfil {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 6px 5px 0px 0px;
+        justify-content: center;
+    }
+    .perfil {
+        background-color: white;
+        color: black;
+        width: 53.9%;
+        left: 125px;
+        height: 79px;
+        border-radius: 10px;
+        position: absolute;
+        display: none;
     }
     p {
         color: gray;

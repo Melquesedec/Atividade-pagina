@@ -79,7 +79,7 @@ selecionar_lista.addEventListener("click", function(){
 //     notificacao.style.display = "block"        
 // })
 
-let mensagem = document.querySelector(".mensagem") 
+let mensagem = document.querySelector(".notificacao") 
 
 // mostra a mensagem
 function showMessage(){   
